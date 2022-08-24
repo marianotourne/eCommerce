@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --very-light-pink: #c7c7c7;
+  --white: #ffffff;
+  --text-input-field: #f7f7f7;
+  --black: #000000;
+  --hospital-green: #acd9b2;
+  --dark: #232830;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  --quick: "Quicksand", sans-serif;
+  --card-size: 240px;
+}
+
+.container {
+  width: 320px;
+  max-width: 360px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .item-image img {
+  width: 100%;
+  height:360px;
+  object-fit: cover;
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 16px;
+}
+
+
+
+.points {
+    display: flex;
+    justify-content: center;
+    margin-bottom:16px;
+  }
+  .points > li {
+    background: var(--very-light-pink);
+    width: 8px;
+    height: 8px;
+    margin: 8px 6px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .points > .active {
+    background: var(--hospital-green);
+  }
+  .points > li:hover {
+    background: var(--hospital-green);
+  }
+
+
+
+.item-detail{
+    font-size: var(--sm);
+    margin: 0 24px;
+}
+
+.item-detail .item-detail--price {
+  margin-bottom: 8px;
+}
+
+.item-detail .item-detail--name {
+  font-size: var(--md);
+  font-weight: bold;
+  margin-bottom: 8px;  
+}
+
+.item-detail .item-detail--description{
+    font-weight: 100;
+}
+
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border:none;
+    color: var(--white);
+    width:100%;
+    cursor:pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.add-to-cart-button{
+    margin-top:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: var(--quick);
+}
+
+.add-to-cart-button img{
+    margin-right: 10px;
+}
+
+
+@media (min-width: 426px){
+    .container{
+        width:100%;
+        position: absolute;
+        right: 0;
+    }
+}
